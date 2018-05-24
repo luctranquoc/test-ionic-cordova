@@ -9,6 +9,10 @@
 
 <ion-content padding>
   <div id="map_canvas">
-    <button ion-button (click)="onButtonClick($event)">Start demo</button>
+	  <label class="item item-input">
+		  <span class="input-label">Address:</span>
+		  <input placeholder="type your address" type="search" [(ngModel)]="search_address"/>
+	  </label>
+    <button ion-button (click)="onButtonClick($event)">Search</button>
   </div>
 </ion-content>
